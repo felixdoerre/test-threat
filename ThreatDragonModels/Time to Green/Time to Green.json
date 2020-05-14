@@ -174,6 +174,10 @@
                 {
                   "x": 521,
                   "y": 56
+                },
+                {
+                  "x": 703,
+                  "y": 66
                 }
               ],
               "id": "ad5530f1-aa40-4e5d-b81c-f16f7a216e4b",
@@ -191,6 +195,7 @@
               ],
               "z": 7,
               "hasOpenThreats": false,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -232,6 +237,7 @@
               ],
               "z": 8,
               "hasOpenThreats": false,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
