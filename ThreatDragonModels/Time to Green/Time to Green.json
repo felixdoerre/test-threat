@@ -18,8 +18,8 @@
                 "height": 100
               },
               "position": {
-                "x": 239,
-                "y": 69
+                "x": 571,
+                "y": 56
               },
               "angle": 0,
               "id": "bbd473cf-2eb9-41f5-8fb4-f86d1f80521d",
@@ -44,8 +44,8 @@
                 "height": 100
               },
               "position": {
-                "x": 843,
-                "y": 78
+                "x": 825,
+                "y": 190
               },
               "angle": 0,
               "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9",
@@ -56,7 +56,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "Auto"
+                  "text": "Fahrzeug"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -70,8 +70,8 @@
                 "height": 100
               },
               "position": {
-                "x": 201,
-                "y": 402
+                "x": 519,
+                "y": 289
               },
               "angle": 0,
               "id": "769b4aeb-a58e-4af4-bb5e-3d81c6e6de73",
@@ -92,46 +92,20 @@
               }
             },
             {
-              "type": "tm.Actor",
-              "size": {
-                "width": 160,
-                "height": 80
-              },
-              "position": {
-                "x": 820,
-                "y": 262
-              },
-              "angle": 0,
-              "id": "bc5eb1fc-86ea-434a-ad9d-d7c4d29717b6",
-              "z": 4,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "Driver"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 47,
-                "y": 237
+                "x": 524,
+                "y": 49
               },
               "target": {
-                "x": 1002,
-                "y": 505
+                "x": 923,
+                "y": 384
               },
               "vertices": [
                 {
-                  "x": 472,
-                  "y": 317
+                  "x": 656,
+                  "y": 303
                 }
               ],
               "id": "2fcf209e-c7bd-452c-809f-23b1160bf8f8",
@@ -146,13 +120,13 @@
                 "y": 42
               },
               "target": {
-                "x": 1004,
-                "y": 476
+                "x": 940,
+                "y": 353
               },
               "vertices": [
                 {
-                  "x": 589,
-                  "y": 255
+                  "x": 748,
+                  "y": 217
                 }
               ],
               "id": "eaa769b6-64e4-4d4c-b037-558bd685b92d",
@@ -163,21 +137,15 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 344,
-                "y": 108
+                "id": "bbd473cf-2eb9-41f5-8fb4-f86d1f80521d"
               },
               "target": {
-                "x": 832,
-                "y": 93
+                "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9"
               },
               "vertices": [
                 {
-                  "x": 521,
-                  "y": 56
-                },
-                {
-                  "x": 703,
-                  "y": 66
+                  "x": 723,
+                  "y": 129
                 }
               ],
               "id": "ad5530f1-aa40-4e5d-b81c-f16f7a216e4b",
@@ -209,17 +177,15 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 340,
-                "y": 147
+                "id": "bbd473cf-2eb9-41f5-8fb4-f86d1f80521d"
               },
               "target": {
-                "x": 838,
-                "y": 163
+                "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9"
               },
               "vertices": [
                 {
-                  "x": 544,
-                  "y": 186
+                  "x": 703,
+                  "y": 172
                 }
               ],
               "id": "b332610c-7ef0-4dc0-8f5d-c2738bc8ca7f",
@@ -251,17 +217,15 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 312,
-                "y": 437
+                "id": "769b4aeb-a58e-4af4-bb5e-3d81c6e6de73"
               },
               "target": {
-                "x": 877,
-                "y": 191
+                "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9"
               },
               "vertices": [
                 {
-                  "x": 537,
-                  "y": 327
+                  "x": 663,
+                  "y": 274
                 }
               ],
               "id": "bda7322f-e1fb-4688-8150-9ccf232ba810",
@@ -292,17 +256,15 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 894,
-                "y": 197
+                "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9"
               },
               "target": {
-                "x": 342,
-                "y": 461
+                "id": "769b4aeb-a58e-4af4-bb5e-3d81c6e6de73"
               },
               "vertices": [
                 {
-                  "x": 520,
-                  "y": 388
+                  "x": 751,
+                  "y": 291
                 }
               ],
               "id": "d6cc38f7-a1b4-4c91-b1a1-c4b2c395ab71",
@@ -329,12 +291,72 @@
                   "class": "connection hasNoOpenThreats isOutOfScope"
                 }
               }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 823,
+                "y": 1
+              },
+              "angle": 0,
+              "id": "9fbee520-bb10-4e69-9f6c-c6646ce11768",
+              "z": 11,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Nachweise"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9"
+              },
+              "target": {
+                "id": "9fbee520-bb10-4e69-9f6c-c6646ce11768"
+              },
+              "vertices": [],
+              "id": "061dffda-0d43-4f4e-b5e6-da69eedb00c0",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Nachweise speichern",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 12,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
           "height": 1237.2236328125,
-          "width": 1005.660888671875
+          "width": 1282
         }
       }
     ]
