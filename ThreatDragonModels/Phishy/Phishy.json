@@ -25,6 +25,7 @@
               "id": "0394cdef-fd6f-4308-9035-1aa5cbc38dc1",
               "z": 1,
               "hasOpenThreats": false,
+              "privilegeLevel": "service-user",
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -51,6 +52,7 @@
               "id": "15c04c95-cb57-4825-929a-4cd4b800486a",
               "z": 2,
               "hasOpenThreats": false,
+              "privilegeLevel": "service-user",
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -77,6 +79,7 @@
               "id": "e9287529-b2b5-4a34-8e4b-9e11c3eaeca4",
               "z": 3,
               "hasOpenThreats": false,
+              "privilegeLevel": "service-user",
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
