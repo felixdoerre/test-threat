@@ -209,17 +209,26 @@
               "angle": 0,
               "id": "5522dd65-bb7e-4950-b67b-11c0f668629c",
               "z": 10,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "storesCredentials": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "title": "Tokens werden gestolen",
+                  "mitigation": "Datenbank ist nicht von extern erreichbar."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Datenbank"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -270,16 +279,26 @@
               "angle": 0,
               "id": "72206efe-1a78-4576-ba5a-d8d1e69a5732",
               "z": 12,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Vorlagen werden verändert",
+                  "type": "Tampering",
+                  "mitigation": "Admin muss sich für push anmelden.",
+                  "description": "Z.B. könnte Javascript eingebettet werden und Login Daten wirklich gestolen/Phishing wird weitergeleitet."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Template-Git"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -318,6 +337,7 @@
               "hasOpenThreats": false,
               "isPublicNetwork": true,
               "isEncrypted": true,
+              "protocol": "HTTPS",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -380,15 +400,25 @@
                 }
               ],
               "z": 15,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isPublicNetwork": true,
               "isEncrypted": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "title": "MITM um Login daten zu bekommen",
+                  "mitigation": "Zertifikat von LDAP Server prüfen. Schauen, dass der korrekte Servername drin steht."
+                }
+              ],
+              "protocol": "LDAPS",
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -401,7 +431,12 @@
               "target": {
                 "id": "0394cdef-fd6f-4308-9035-1aa5cbc38dc1"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 193,
+                  "y": 190
+                }
+              ],
               "id": "9a216168-c44b-4f1a-85bf-525aadbae979",
               "labels": [
                 {
@@ -417,6 +452,7 @@
               ],
               "z": 16,
               "hasOpenThreats": false,
+              "protocol": "LDAPS",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -463,7 +499,12 @@
                 "x": 958,
                 "y": 74
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 777,
+                  "y": 52
+                }
+              ],
               "id": "b5778163-7411-4e0f-a01d-e95740d612f9",
               "labels": [
                 {
@@ -479,6 +520,7 @@
               ],
               "z": 19,
               "hasOpenThreats": false,
+              "protocol": "SMTPS",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -614,15 +656,32 @@
                 }
               ],
               "z": 23,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isEncrypted": true,
               "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "title": "DoS durch Empfänger",
+                  "mitigation": "Tokens nur begrenzt gültig. Template rendern braucht nicht zu viele Ressourcen."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "title": "Aufklärungsseite wird von anderer Phishing-Kampange mitbenutzt",
+                  "mitigation": "Tokens erlauben nur zeitlich begrenzten Zugriff."
+                }
+              ],
+              "protocol": "HTTPS",
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -656,6 +715,7 @@
               ],
               "z": 25,
               "hasOpenThreats": false,
+              "protocol": "HTTPS-Reply",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -805,6 +865,9 @@
               ],
               "z": 29,
               "hasOpenThreats": false,
+              "protocol": "HTTPS-Reply",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -940,14 +1003,126 @@
                 }
               ],
               "z": 33,
-              "hasOpenThreats": false,
-              "outOfScope": true,
+              "hasOpenThreats": true,
+              "outOfScope": false,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "title": "Sensitive Informationen im Log",
+                  "mitigation": "Keine personenbezogenen Daten, keine Credentials im Log"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isOutOfScope"
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "5832aa0f-6aca-4ecc-9c20-6ab016c08766"
+              },
+              "target": {
+                "id": "0394cdef-fd6f-4308-9035-1aa5cbc38dc1"
+              },
+              "vertices": [
+                {
+                  "x": 800,
+                  "y": 120
+                }
+              ],
+              "id": "59046252-2eb0-4c18-9c58-7d9f338a404b",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Gemeldete Mails",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 34,
+              "hasOpenThreats": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "title": "Ungültige Mails verhindern Verarbeitung",
+                  "description": "Große Mails, Falsche Header,...",
+                  "mitigation": "Ungültige Mails werden übersprungen"
+                }
+              ],
+              "protocol": "IMAPS",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "622d1a3b-1e80-4316-957a-e1444d00c239"
+              },
+              "target": {
+                "id": "e9287529-b2b5-4a34-8e4b-9e11c3eaeca4"
+              },
+              "vertices": [
+                {
+                  "x": 334,
+                  "y": 483
+                }
+              ],
+              "id": "e1755858-f14e-4378-b599-613053f05f05",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Metrikanfrage",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 35,
+              "hasOpenThreats": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Zu viele Anfragen",
+                  "type": "Denial of service",
+                  "mitigation": "Basic Authentication im Tomcat konfigurieren"
+                }
+              ],
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             }
