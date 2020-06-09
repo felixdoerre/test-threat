@@ -180,16 +180,25 @@
               "angle": 0,
               "id": "b00d2400-e6ea-4483-a3b3-b137c55784ff",
               "z": 7,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "title": "Zuordnung von Phishing-Vorgang zu Mitarbeiter",
+                  "mitigation": "Zuordnung wird bereits beim senden aufgebrochen. Bei einer gemeldeten Mail wird die Absenderadresse nur für eine direkte Antwort benutzt."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Verwaltungs\nserver"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -226,8 +235,8 @@
                 "height": 80
               },
               "position": {
-                "x": 124,
-                "y": 172
+                "x": 105,
+                "y": 166
               },
               "angle": 0,
               "id": "e1d36a54-b6aa-4446-9ff7-128a814f0e1b",
@@ -591,7 +600,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Phishing Website\nöffnen",
+                      "text": "Phishing-Website\nöffnen",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -633,7 +642,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Phishing Mails",
+                      "text": "Phishing-Mails,\nErklärungsmails",
                       "font-weight": "400",
                       "font-size": "small"
                     }
