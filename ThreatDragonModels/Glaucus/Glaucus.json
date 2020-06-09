@@ -319,13 +319,22 @@
                 }
               ],
               "z": 11,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "title": "SQL Injection",
+                  "mitigation": "ORM wird benutzt, keine direkten SQL queries."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -340,8 +349,8 @@
               },
               "vertices": [
                 {
-                  "x": 547,
-                  "y": 219
+                  "x": 538,
+                  "y": 215
                 }
               ],
               "id": "79ceef08-c629-4eb6-94cc-13d6a99738b4",
@@ -405,8 +414,8 @@
               },
               "vertices": [
                 {
-                  "x": 656,
-                  "y": 171
+                  "x": 628,
+                  "y": 202
                 }
               ],
               "id": "73d50d75-8f93-4dce-8946-5e9936975cf7",
@@ -540,13 +549,24 @@
                 }
               ],
               "z": 19,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "title": "Angreifer gibt sich als LDAP server aus und empfängt Anmeldedaten",
+                  "mitigation": "Check TLS Certificate."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -554,10 +574,10 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "8cc50d98-a390-4f87-a897-5e6794c423f3"
+                "id": "e5051a94-1904-4d2a-82bf-7f53c1a6fa87"
               },
               "target": {
-                "id": "e5051a94-1904-4d2a-82bf-7f53c1a6fa87"
+                "id": "8cc50d98-a390-4f87-a897-5e6794c423f3"
               },
               "vertices": [
                 {
@@ -571,7 +591,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Phishing Mails öffnen",
+                      "text": "Phishing Website\nöffnen",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -622,6 +642,8 @@
               ],
               "z": 21,
               "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -660,13 +682,24 @@
                 }
               ],
               "z": 22,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "title": "Malformed Mails could prevent processing",
+                  "mitigation": "Be carefule to skip malformed mails."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -774,13 +807,24 @@
                 }
               ],
               "z": 25,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "title": "Unauthenticated Metrics Endpoint",
+                  "mitigation": "Enforce Basic authentication"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -852,13 +896,32 @@
                 }
               ],
               "z": 27,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "protocol": "HTTPS",
+              "isPublicNetwork": true,
+              "isEncrypted": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "title": "Remote code execution durch Anmeldedaten.",
+                  "mitigation": "Anmeldedaten werden vernünftig behandelt."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "title": "Viele kleine Anfragen überlasten den Dienst",
+                  "mitigation": "Anfragen ohne gültige Authentifizierung werden früh abgewiesen. Anfragen ohne Authentifizierung sind nicht möglich."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -892,6 +955,8 @@
               ],
               "z": 28,
               "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -937,6 +1002,56 @@
               "id": "f2557117-ad88-43c0-8f8d-ca5157aa87dd",
               "z": 29,
               "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "b00d2400-e6ea-4483-a3b3-b137c55784ff"
+              },
+              "target": {
+                "id": "8cc50d98-a390-4f87-a897-5e6794c423f3"
+              },
+              "vertices": [
+                {
+                  "x": 769,
+                  "y": 238
+                }
+              ],
+              "id": "849fe629-6ec8-4080-a7b2-bd77d956d83b",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Aufkärungsseite",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 30,
+              "hasOpenThreats": true,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "title": "Auflkärungsseite wird von echtem Phishing Angriff benutzt",
+                  "mitigation": "Kann nur mit Token angezeigt werden. Tokens laufen ab."
+                }
+              ],
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
