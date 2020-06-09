@@ -317,7 +317,10 @@
               "id": "00e0c56c-713b-45d1-97a8-33f7b3d4e423",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.46877218406669985,
+                    "offset": 9.895709370509625
+                  },
                   "attrs": {
                     "text": {
                       "text": "Konfiguration",
