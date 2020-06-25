@@ -8,7 +8,335 @@
       {
         "title": "Architektur",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 323,
+                "y": 321
+              },
+              "angle": 0,
+              "id": "59c4b1ba-69d9-4b32-b715-77fab4c09f20",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Backend"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 690,
+                "y": 382
+              },
+              "angle": 0,
+              "id": "59e3c2d4-a525-4caa-971c-02d4c7977f1a",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Traffic Control\nCenter"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 74,
+                "y": 59
+              },
+              "angle": 0,
+              "id": "07efc15d-985e-496a-84f2-f8bb74dd9afa",
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "anderes Fahrzeug"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 430,
+                "y": 59
+              },
+              "angle": 0,
+              "id": "6c847739-b725-4629-b20b-3ac2b20d87b5",
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Fahrzeug"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 815,
+                "y": 57
+              },
+              "angle": 0,
+              "id": "38d8bc7e-8c7e-4b18-8212-b60ab0b5c599",
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Ampel"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "59e3c2d4-a525-4caa-971c-02d4c7977f1a"
+              },
+              "target": {
+                "id": "38d8bc7e-8c7e-4b18-8212-b60ab0b5c599"
+              },
+              "vertices": [
+                {
+                  "x": 784,
+                  "y": 316
+                }
+              ],
+              "id": "df2af782-b6fb-4f29-9665-d07933239d95",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Ampelzustand/Progra\nmm",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "59c4b1ba-69d9-4b32-b715-77fab4c09f20"
+              },
+              "target": {
+                "id": "6c847739-b725-4629-b20b-3ac2b20d87b5"
+              },
+              "vertices": [
+                {
+                  "x": 480,
+                  "y": 254
+                }
+              ],
+              "id": "f7484226-de27-4691-a782-54fcc56c6d0a",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Zustandsvorhersage",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 10,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "59e3c2d4-a525-4caa-971c-02d4c7977f1a"
+              },
+              "target": {
+                "id": "59c4b1ba-69d9-4b32-b715-77fab4c09f20"
+              },
+              "vertices": [
+                {
+                  "x": 462,
+                  "y": 385
+                }
+              ],
+              "id": "e1eac21b-1096-4375-bd59-7a1b82c7ee08",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Ampelzustand",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "6c847739-b725-4629-b20b-3ac2b20d87b5"
+              },
+              "target": {
+                "id": "59c4b1ba-69d9-4b32-b715-77fab4c09f20"
+              },
+              "vertices": [
+                {
+                  "x": 391,
+                  "y": 216
+                }
+              ],
+              "id": "c3fe8604-484b-41e5-9fcb-6b43f4b73355",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Anfrage für\nbestimmte Ampel",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 12,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "38d8bc7e-8c7e-4b18-8212-b60ab0b5c599"
+              },
+              "target": {
+                "id": "6c847739-b725-4629-b20b-3ac2b20d87b5"
+              },
+              "vertices": [],
+              "id": "9d86aaf6-54c3-4bfd-a740-e8b3159430b3",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "visueller Zustand",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 13,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 1379,
+          "width": 1051
+        }
       }
     ]
   }
