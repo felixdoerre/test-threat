@@ -51,9 +51,10 @@
               "id": "59e3c2d4-a525-4caa-971c-02d4c7977f1a",
               "z": 3,
               "hasOpenThreats": false,
+              "outOfScope": true,
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isOutOfScope"
                 },
                 "text": {
                   "text": "Traffic Control\nCenter"
@@ -129,9 +130,10 @@
               "id": "38d8bc7e-8c7e-4b18-8212-b60ab0b5c599",
               "z": 8,
               "hasOpenThreats": false,
+              "outOfScope": true,
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isOutOfScope"
                 },
                 "text": {
                   "text": "Ampel"
@@ -171,12 +173,13 @@
               ],
               "z": 9,
               "hasOpenThreats": false,
+              "outOfScope": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isOutOfScope"
                 }
               }
             },
@@ -400,12 +403,13 @@
               ],
               "z": 16,
               "hasOpenThreats": false,
+              "outOfScope": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isOutOfScope"
                 }
               }
             },
@@ -475,9 +479,10 @@
               "id": "82f42ee5-2bf8-4705-b0cd-35c9458c4372",
               "z": 19,
               "hasOpenThreats": false,
+              "outOfScope": true,
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isOutOfScope"
                 },
                 "text": {
                   "text": "Ampelnetz"
@@ -495,7 +500,7 @@
                 "y": 285
               },
               "target": {
-                "x": 383,
+                "x": 423,
                 "y": 558
               },
               "vertices": [
@@ -541,8 +546,8 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 44,
-                "y": 246
+                "x": 57,
+                "y": 220
               },
               "target": {
                 "x": 918,
@@ -575,8 +580,12 @@
               },
               "vertices": [
                 {
-                  "x": 218,
-                  "y": 221
+                  "x": 34,
+                  "y": 185
+                },
+                {
+                  "x": 144,
+                  "y": 281
                 },
                 {
                   "x": 783,
