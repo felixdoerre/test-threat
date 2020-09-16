@@ -44,8 +44,8 @@
                 "height": 100
               },
               "position": {
-                "x": 442,
-                "y": 191
+                "x": 740,
+                "y": 310
               },
               "angle": 0,
               "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9",
@@ -140,7 +140,7 @@
                 "id": "bbd473cf-2eb9-41f5-8fb4-f86d1f80521d"
               },
               "target": {
-                "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9"
+                "id": "4ecdd3bd-1cb3-455a-adde-2e4e1b92c061"
               },
               "vertices": [
                 {
@@ -180,7 +180,7 @@
                 "id": "bbd473cf-2eb9-41f5-8fb4-f86d1f80521d"
               },
               "target": {
-                "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9"
+                "id": "4ecdd3bd-1cb3-455a-adde-2e4e1b92c061"
               },
               "vertices": [
                 {
@@ -220,7 +220,7 @@
                 "id": "769b4aeb-a58e-4af4-bb5e-3d81c6e6de73"
               },
               "target": {
-                "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9"
+                "id": "4ecdd3bd-1cb3-455a-adde-2e4e1b92c061"
               },
               "vertices": [
                 {
@@ -256,7 +256,7 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9"
+                "id": "4ecdd3bd-1cb3-455a-adde-2e4e1b92c061"
               },
               "target": {
                 "id": "769b4aeb-a58e-4af4-bb5e-3d81c6e6de73"
@@ -322,7 +322,7 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9"
+                "id": "4ecdd3bd-1cb3-455a-adde-2e4e1b92c061"
               },
               "target": {
                 "id": "9fbee520-bb10-4e69-9f6c-c6646ce11768"
@@ -349,6 +349,32 @@
                 },
                 ".connection": {
                   "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 413,
+                "y": 159
+              },
+              "angle": 0,
+              "id": "4ecdd3bd-1cb3-455a-adde-2e4e1b92c061",
+              "z": 13,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Fahrzeug"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             }
