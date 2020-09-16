@@ -117,40 +117,13 @@
               }
             },
             {
-              "type": "tm.Actor",
-              "size": {
-                "width": 160,
-                "height": 80
-              },
-              "position": {
-                "x": 635,
-                "y": 133
-              },
-              "angle": 0,
-              "id": "38d8bc7e-8c7e-4b18-8212-b60ab0b5c599",
-              "z": 8,
-              "hasOpenThreats": false,
-              "outOfScope": true,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isOutOfScope"
-                },
-                "text": {
-                  "text": "Ampel"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
               "type": "tm.Flow",
               "smooth": true,
               "source": {
                 "id": "59e3c2d4-a525-4caa-971c-02d4c7977f1a"
               },
               "target": {
-                "id": "38d8bc7e-8c7e-4b18-8212-b60ab0b5c599"
+                "id": "b0ad2ec1-78d9-4862-ae0a-abbebce6dcf0"
               },
               "vertices": [
                 {
@@ -164,7 +137,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Ampelzustand/Progra\nmm",
+                      "text": "Ampelzustand/\nProgramm",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -304,7 +277,7 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "38d8bc7e-8c7e-4b18-8212-b60ab0b5c599"
+                "id": "b0ad2ec1-78d9-4862-ae0a-abbebce6dcf0"
               },
               "target": {
                 "id": "6c847739-b725-4629-b20b-3ac2b20d87b5"
@@ -341,7 +314,7 @@
                 "id": "6c847739-b725-4629-b20b-3ac2b20d87b5"
               },
               "target": {
-                "id": "38d8bc7e-8c7e-4b18-8212-b60ab0b5c599"
+                "id": "b0ad2ec1-78d9-4862-ae0a-abbebce6dcf0"
               },
               "vertices": [
                 {
@@ -377,7 +350,7 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "38d8bc7e-8c7e-4b18-8212-b60ab0b5c599"
+                "id": "b0ad2ec1-78d9-4862-ae0a-abbebce6dcf0"
               },
               "target": {
                 "id": "59e3c2d4-a525-4caa-971c-02d4c7977f1a"
@@ -420,8 +393,8 @@
                 "height": 80
               },
               "position": {
-                "x": 101,
-                "y": 355
+                "x": 254,
+                "y": 509
               },
               "angle": 0,
               "id": "290d9a0c-852f-4dad-ba01-f52c1ae36685",
@@ -446,8 +419,8 @@
                 "height": 80
               },
               "position": {
-                "x": 102,
-                "y": 454
+                "x": 256,
+                "y": 608
               },
               "angle": 0,
               "id": "55dc24a3-e64c-4a25-b699-d20db9a36d65",
@@ -472,8 +445,8 @@
                 "height": 80
               },
               "position": {
-                "x": 786,
-                "y": 388
+                "x": 630,
+                "y": 500
               },
               "angle": 0,
               "id": "82f42ee5-2bf8-4705-b0cd-35c9458c4372",
@@ -496,12 +469,12 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 79,
-                "y": 285
+                "x": 223,
+                "y": 339
               },
               "target": {
-                "x": 423,
-                "y": 558
+                "x": 443,
+                "y": 698
               },
               "vertices": [
                 {
@@ -521,21 +494,21 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 910,
-                "y": 70
+                "x": 791,
+                "y": 75
               },
               "target": {
-                "x": 888,
-                "y": 520
+                "x": 787,
+                "y": 596
               },
               "vertices": [
                 {
-                  "x": 580,
-                  "y": 108
+                  "x": 570,
+                  "y": 144
                 },
                 {
-                  "x": 600,
-                  "y": 448
+                  "x": 590,
+                  "y": 549
                 }
               ],
               "id": "90ad5c98-ca92-4808-894e-44984632285e",
@@ -546,12 +519,12 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 57,
-                "y": 220
+                "x": 203,
+                "y": 247
               },
               "target": {
-                "x": 918,
-                "y": 35
+                "x": 786,
+                "y": 43
               },
               "vertices": [
                 {
@@ -571,36 +544,63 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 30,
-                "y": 20
+                "x": 190,
+                "y": 23
               },
               "target": {
-                "x": 969,
-                "y": 5
+                "x": 791,
+                "y": 17
               },
               "vertices": [
                 {
-                  "x": 34,
-                  "y": 185
+                  "x": 180,
+                  "y": 216
                 },
                 {
-                  "x": 144,
-                  "y": 281
+                  "x": 292,
+                  "y": 289
                 },
                 {
-                  "x": 783,
-                  "y": 242
+                  "x": 700,
+                  "y": 271
                 }
               ],
               "id": "468a768f-7ca3-471d-b7fd-153e2221e0f2",
               "z": 23,
               "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 663,
+                "y": 115
+              },
+              "angle": 0,
+              "id": "b0ad2ec1-78d9-4862-ae0a-abbebce6dcf0",
+              "z": 24,
+              "hasOpenThreats": false,
+              "outOfScope": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isOutOfScope"
+                },
+                "text": {
+                  "text": "Ampel"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
-          "height": 1379,
-          "width": 1097.33056640625
+          "height": 1450,
+          "width": 1125
         }
       }
     ]
