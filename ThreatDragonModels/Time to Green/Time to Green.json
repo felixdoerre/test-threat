@@ -44,32 +44,6 @@
                 "height": 100
               },
               "position": {
-                "x": 740,
-                "y": 310
-              },
-              "angle": 0,
-              "id": "b859610e-91c9-47ca-ab79-47aa1c61c8c9",
-              "z": 2,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "Fahrzeug"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Process",
-              "size": {
-                "width": 100,
-                "height": 100
-              },
-              "position": {
                 "x": 51,
                 "y": 311
               },
